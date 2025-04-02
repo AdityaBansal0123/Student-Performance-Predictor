@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("{{ url_for('static', filename='images/background.jpg') }}") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures full height */
+}
+
+.container {
+    max-width: 800px;
+    background: rgba(20, 76, 126, 0.3); 
+    border: 2px solid rgba(255, 255, 255, 0.801); /* White semi-transparent border */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+}
+
+
+
+h1, h2 {
+    color: #F4D35E;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #EE964B;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 32px;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #F95738;
+}
+
+.project-overview {
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+}

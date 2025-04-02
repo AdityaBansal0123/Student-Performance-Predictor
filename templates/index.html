@@ -1,1 +1,70 @@
-<h1>Welcome to the home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination Marks Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_index.css') }}">
+    <style>
+        body {
+            background: url("{{ url_for('static', filename='images/background.jpg') }}") no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the <br> 📊 Student Performance Predictor</h1>
+            <p>
+                This machine learning project predicts students' Math scores based on various factors, including:
+                Gender, Ethnicity, Parental Level of Education, Lunch Type, Test Preparation Course, and Individual Reading and Writing Scores.
+                The model aims to analyze how these factors impact academic performance.
+            </p>
+        </header>
+        
+        <section class="project-overview">
+            <h2>📋 Project Overview</h2>
+            <p>
+                The Examination Marks Predictor utilizes machine learning techniques to analyze student performance.
+                The dataset includes demographic and educational attributes to make informed predictions.
+            </p>
+            <ul>
+                <li>🧑‍🤝‍🧑 Gender</li>
+                <li>🌍 Race & Ethnicity</li>
+                <li>🎓 Parental Level of Education</li>
+                <li>🍽️ Lunch Type</li>
+                <li>📚 Test Preparation Course</li>
+                <li>📝 Reading and Writing Scores</li><br>
+            </ul>
+        </section>
+        
+        <section class="technology" style="text-align: left;">
+            <h2>🔧 Technologies Used</h2>
+            <ul>
+                <li>📊 Python (Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn)</li>
+                <li>🤖 Machine Learning (Linear Regression, Decision Trees, Random Forest)</li>
+                <li>🌐 Flask (Web Framework for Deployment)</li>
+                <li>💾 Jupyter Notebook for Data Analysis</li>
+                <li>🖥️ HTML, CSS for Frontend</li><br>
+            </ul>
+        </section>
+        
+        <section class="features" style="text-align: left;">
+            <h2>🚀 Features</h2>
+            <ul>
+                <li>📌 Predicts student math scores based on input parameters</li>
+                <li>📈 Visualizes data distributions and performance trends</li>
+                <li>📝 User-friendly web interface for prediction</li>
+                <li>⚡ Fast and efficient model performance</li>
+            </ul>
+        </section>
+        
+        <div class="button-group">
+            <a href="/predictdata" class="btn">Go to Prediction Page</a>
+            <span style="margin: 0 10px;"></span>
+            <a href="https://github.com/AdityaBansal0123/Student-Performance-Predictor" class="btn github-btn" target="_blank">Go to GitHub Repository</a>
+        </div>
+    </div>
+</body>
+</html>
