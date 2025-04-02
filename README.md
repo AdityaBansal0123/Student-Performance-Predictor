@@ -1,4 +1,4 @@
-# 🧑‍🎓 Examination-Marks-Predictor 📊
+# 🧑‍🎓 Student Performance Predictor 📊
 
 This machine learning project predicts the **Math marks** of students based on various factors such as **Gender**, **Ethnicity**, **Parental Level of Education**, **Lunch Type**, **Test Preparation Course**, and individual **Reading** and **Writing Scores**. 
 
@@ -99,8 +99,8 @@ Examination-Marks-Predictor/
 **1.** Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/AdityaBansal0123/Examination-Marks-Predictor.git
-   cd Examination-Marks-Predictor
+   git clone https://github.com/AdityaBansal0123/Student-Performance-Predictor.git
+   cd Student-Performance-Predictor
    ```
 
 **2.** Install the required dependencies:
