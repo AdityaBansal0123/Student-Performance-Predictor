@@ -1,13 +1,18 @@
+
+html, body {
+    height: 100%;
+    overflow-y: auto; /* Enable vertical scrolling */
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background: none; /* Remove direct background image */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Ensure full viewport height */
     margin: 0;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Background with blur effect */
@@ -19,23 +24,33 @@ body {
     height: 100%;
     background: url("{{ url_for('static', filename='images/background.jpg') }}") no-repeat center center fixed;
     background-size: cover;
-    filter: blur(8px); /* Adjust blur intensity */
+    filter: blur(8px);
     z-index: -1;
 }
 
+.container {
+    max-width: 90%; /* Responsive width */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .login {
-    background: rgba(20, 76, 126, 0.3); /* More transparency */
-    border: 2px solid rgba(255, 255, 255, 0.801);
-    backdrop-filter: blur(5px); /* Enhanced frosted glass effect */
+    background: rgba(20, 76, 126, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); 
-    width: 500px; /* Expanded width */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    width: 500px;
     text-align: center;
-    border: 2px solid rgba(255, 255, 255, 0.3); /* Soft border */
 }
+
 h1 {
-    color: #F4D35E; /* Match style_index.css color scheme */ /* Changed font color for better contrast on blue background */
+    color: #F4D35E;
+}
+
+h2 {
+    color: #3179e6;
 }
 
 .mb-3 {
@@ -49,7 +64,7 @@ h1 {
 }
 
 .form-control {
-    width: 100%; 
+    width: 100%;
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #ccc;
@@ -57,7 +72,7 @@ h1 {
 }
 
 .form-control1 {
-    width: 96%; 
+    width: 97%;
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #ccc;
@@ -67,20 +82,27 @@ h1 {
 .btn {
     width: 100%;
     padding: 10px;
-    background-color: #EE964B; /* Match style_index.css button color */
+    background-color: #EE964B;
     border: none;
-    color: #ffffff; /* Match style_index.css color scheme */
+    color: #ffffff;
     font-size: 16px;
     cursor: pointer;
     border-radius: 32px;
 }
 
 .btn:hover {
-    background-color: #F95738; /* Match hover effect from style_index.css */
+    background-color: #F95738;
 }
 
-h2 {
-    margin-top: 20px;
-    color: #007bff;
-}
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: stretch;
+        overflow-y: auto;
+    }
 
+    .login {
+        width: 90%;
+        max-width: 400px;
+    }
+}
